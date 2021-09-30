@@ -160,7 +160,7 @@ main {
 }
 
 /* WIP */
-.center {
+main.center {
   display: flex;
   justify-content: center;
 }
@@ -168,4 +168,22 @@ main {
 form label {
   display: flex;
   justify-content: center;
+}
+form input, select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: none;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=submit] {
+  background-color: #26007B;
+  color: white;
+  margin: 8px 0;
+  cursor: pointer;
+}
+input[type=submit]:hover {
+  background-color: #42008D;
 }
