@@ -5,11 +5,11 @@
   --text-secondary: #ececec;
   --bg-primary: #23232e;
   --bg-secondary: #141418;
-  --color-1: #0A0068;
-  --color-2: #26007B;
-  --color-3: #42008D;
-  --color-4: #5E00A0;
-  --color-5: #7A00B2;
+  --color-1: #e012e7;
+  --color-2: #250dd8;
+  --color-3: #8713b2;
+  --color-4: #1e177f;
+  --color-5: #f121f5;
   --color-icon: #DF49A6;
   --transition-speed: 600ms;
 }
@@ -168,6 +168,13 @@ main.center {
   text-align: center;
   width: auto;
 }
+footer {
+  display: flex;
+  margin-left: 5rem;
+  padding: 1rem;
+  justify-content: center;
+  align-content: flex-end;
+}
 /* User */
 .form1 fieldset{
   border: none;
@@ -192,6 +199,9 @@ main.center {
   transition: 0.25s;
   box-sizing: border-box;
 }
+.form1 input[type=password]{
+
+}
 .form1 input[type=text]:focus,input[type=password]:focus{
   width: 100%;
   border-color: var(--color-5);
@@ -211,6 +221,11 @@ main.center {
   transition: 0.25s;
   cursor: pointer;
 }
-input[type=submit]:hover {
+input[type=submit]:hover,input[type=submit]:focus {
   background-color: var(--color-5);
+}
+.form1 a {
+  text-decoration: none;
+  color: var(--text-primary);
+  font-size: 12px;
 }
