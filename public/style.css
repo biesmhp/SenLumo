@@ -5,6 +5,7 @@
   --text-secondary: #ececec;
   --bg-primary: #23232e;
   --bg-secondary: #141418;
+  --bg-terciary: #252533;
   --color-1: #e012e7;
   --color-2: #250dd8;
   --color-3: #8713b2;
@@ -19,6 +20,10 @@ body {
   background-color: var(--bg-secondary);
   margin: 0;
   padding: 0;
+}
+a {
+  text-decoration: none;
+  color: var(--text-primary);
 }
 
 main {
@@ -162,7 +167,7 @@ main {
 }
 
 /* WIP */
-main.center {
+.center {
   display: flex;
   justify-content: center;
   text-align: center;
@@ -170,10 +175,9 @@ main.center {
 }
 footer {
   display: flex;
-  margin-left: 5rem;
   padding: 1rem;
   justify-content: center;
-  align-content: flex-end;
+  align-content: center;
 }
 /* User */
 .form1 fieldset{
@@ -229,3 +233,50 @@ input[type=submit]:hover,input[type=submit]:focus {
   color: var(--text-primary);
   font-size: 12px;
 }
+/* End User */
+/* Planets */
+.card-list {
+    display: flex;
+    /* wrap is needed for multiple rows */
+    flex-wrap: wrap;
+    overflow-x: hidden;
+    text-align: center;
+}
+.card-list header {
+  width: 100%;
+}
+.card {
+  /* dimensions */
+  height: 350px;
+  width: 500px;
+  min-width: 300px;
+  /* separation between cards */
+  margin: 1rem auto 1rem auto;
+  /* curve border */
+  border-radius: 16px;
+  /* background color */
+  background: var(--bg-terciary);
+  /* position */
+  position: static;
+  display: flex;
+  flex-direction: column;
+  /* content position */
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  /* hover transition time */
+  transition: .2s;
+  clear: both;
+}
+.card img.icon-img {
+  width: 100px;
+  height: 100px;
+}
+.card:hover {
+    transform: translateY(-1rem);
+    box-shadow: -1rem 0 5rem #000;
+}
+.card:hover a {
+  color: var(--text-secondary);
+}
+/* End Planets */
