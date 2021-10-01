@@ -203,9 +203,6 @@ footer {
   transition: 0.25s;
   box-sizing: border-box;
 }
-.form1 input[type=password]{
-
-}
 .form1 input[type=text]:focus,input[type=password]:focus{
   width: 100%;
   border-color: var(--color-5);
