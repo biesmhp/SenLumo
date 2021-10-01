@@ -7,3 +7,5 @@
 [Navbar style with only html and css](https://www.youtube.com/watch?v=biOMz4puGt8)
 
 [Form style with html and css only](https://www.youtube.com/watch?v=HV7DtH3J2PU)
+
+[Flex Wrap](https://www.youtube.com/watch?v=4waW5jWrOAI)
