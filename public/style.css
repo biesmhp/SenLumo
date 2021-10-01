@@ -14,21 +14,24 @@
   --color-icon: #DF49A6;
   --transition-speed: 600ms;
 }
-
+html {
+  height: 100%;
+  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+  overflow: hidden;
+}
 body {
   color: var(--text-primary);
-  background-color: var(--bg-secondary);
+  /* background-color: var(--bg-secondary); */
   margin: 0;
   padding: 0;
+}
+main {
+  margin-left: 5rem;
+  padding: 1rem;
 }
 a {
   text-decoration: none;
   color: var(--text-primary);
-}
-
-main {
-  margin-left: 5rem;
-  padding: 1rem;
 }
 
 .navbar {
@@ -36,6 +39,7 @@ main {
   background-color: var(--bg-primary);
   transition: width 600ms ease;
   overflow: scroll;
+  /* background: transparent; */
 }
 
 .navbar-nav {
@@ -66,10 +70,11 @@ main {
   transition: var(--transition-speed);
 }
 
-.nav-link:hover {
+.nav-link:hover, .nav-link:focus {
   filter: grayscale(0%) opacity(1);
   background: var(--bg-secondary);
   color: var(--text-secondary);
+  outline: none;
 }
 
 .link-text {
@@ -241,10 +246,10 @@ input[type=submit]:hover,input[type=submit]:focus {
 .card-form {
   /* dimensions */
   height: 350px;
-  width: 500px;
+  width: 300px;
   min-width: 300px;
   /* separation between cards */
-  margin: 1rem auto 1rem auto;
+  margin: 10rem auto 1rem auto;
   /* curve border */
   border-radius: 16px;
   /* background color */
@@ -259,6 +264,7 @@ input[type=submit]:hover,input[type=submit]:focus {
   align-items: center;
   /* hover transition time */
   transition: .2s;
+  box-shadow: -1rem 0 5rem #000;
   clear: both;
 }
 /* End User */
@@ -306,5 +312,6 @@ input[type=submit]:hover,input[type=submit]:focus {
 }
 .card:hover a {
   color: var(--text-secondary);
+
 }
 /* End Planets */
