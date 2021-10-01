@@ -194,7 +194,7 @@ footer {
   display: block;
   margin: 1rem auto;
   text-align: center;
-  border: 0.1rem solid var(--color-2);
+  border: 0.1rem solid var(--text-primary);
   padding: 14px 10px;
   width: 80%;
   outline: none;
@@ -205,7 +205,8 @@ footer {
 }
 .form1 input[type=text]:focus,input[type=password]:focus{
   width: 100%;
-  border-color: var(--color-5);
+  border-color: var(--text-secondary);
+  border-width: thin;
 }
 .form1 input[type=submit]{
   border: 0;
@@ -213,7 +214,7 @@ footer {
   display: block;
   margin: 1rem auto;
   text-align: center;
-  border: 0.1rem solid var(--color-5);
+  border: 0.1rem solid var(--text-primary);
   padding: 14px 10px;
   width: 50%;
   outline: none;
@@ -223,12 +224,42 @@ footer {
   cursor: pointer;
 }
 input[type=submit]:hover,input[type=submit]:focus {
-  background-color: var(--color-5);
+  /* Color inversion */
+  background-color: var(--text-primary);
+  color: var(--bg-primary);
 }
 .form1 a {
   text-decoration: none;
   color: var(--text-primary);
   font-size: 12px;
+}
+.form1 a:focus {
+  /* Color inversion */
+  background-color: var(--text-primary);
+  color: var(--bg-primary);
+}
+.card-form {
+  /* dimensions */
+  height: 350px;
+  width: 500px;
+  min-width: 300px;
+  /* separation between cards */
+  margin: 1rem auto 1rem auto;
+  /* curve border */
+  border-radius: 16px;
+  /* background color */
+  background: var(--bg-terciary);
+  /* position */
+  position: static;
+  display: flex;
+  flex-direction: column;
+  /* content position */
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  /* hover transition time */
+  transition: .2s;
+  clear: both;
 }
 /* End User */
 /* Planets */
