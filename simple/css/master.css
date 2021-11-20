@@ -1,0 +1,59 @@
+:root {
+  font-size: 16px;
+  font-family: 'Open Sans';
+  /* Very dark background. Navbar */
+  --nord: #242933;
+  /* Dark background*/
+  --nord0: #2e3440;
+  /* Brighter shade color for elevated, focused UI elements */
+  --nord1: #3b4252;
+  /* Even brighter for highlighting active elements */
+  --nord2: #434c5e;
+  /* The brightest shade color based en nord0 */
+  --nord3: #4c566a;
+
+  /* Used for UI elements like the text editor caret */
+  --nord4: #d8dee9;
+  /* Used for more subtle/inconspicuous UI text elements that do not need so much visual attention. */
+  --nord5: #e5e9f0;
+  /* Used for elevated UI text elements that require more visual attention. For text */
+  --nord6: #eceff4;
+
+  /* Used for UI elements that should, next to the primary accent color nord8, stand out and get more visual attention */
+  --nord7: #8fbcbb;
+  /* Used for primary UI elements with main usage purposes that require the most visual attention. */
+  --nord8: #88c0d0;
+  /* Used for secondary UI elements that also require more visual attention than other elements. */
+  --nord9: #81a1c1;
+  /* Used for tertiary UI elements that require more visual attention than default elements. */
+  --nord10: #5e81ac;
+
+  /* Red */
+  --nord11: #bf616a;
+  /* Orange */
+  --nord12: #d08770;
+  /* Yellow */
+  --nord13: #ebcb8b;
+  /* Green */
+  --nord14: #a3be8c;
+  /* Pink */
+  --nord15: #b48ead;
+  --transition-speed: 600ms;
+}
+
+html {
+  background-color: var(--nord0);
+}
+
+body {
+  color: var(--nord6);
+}
+
+section {
+  background-color: var(--nord1);
+  padding: 10px;
+}
+
+article {
+  background-color: var(--nord2);
+}
